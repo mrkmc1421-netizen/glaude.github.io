@@ -1,0 +1,15 @@
+document.getElementById("prompt-type-bar").innerText =
+  "Mode: Funny • Banter: ON • Chaos: ENABLED";
+
+const input = document.getElementById("glaude-input");
+const output = document.getElementById("glaude-output");
+
+input.addEventListener("keydown", e => {
+  if (e.key === "Enter") {
+    const userText = input.value;
+    const reply = Glaude.respond(userText);
+    output.innerHTML += `<p><b>You:</b> ${userText}</p>`;
+    output.innerHTML += `<p><b>Glaude:</b> ${reply}</p>`;
+    input.value = "";
+  }
+});
