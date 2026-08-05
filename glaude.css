@@ -1,0 +1,9 @@
+#prompt-type-bar {
+  background: linear-gradient(90deg, #FFD93D, #FF6F61, #7D5FFF);
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}
